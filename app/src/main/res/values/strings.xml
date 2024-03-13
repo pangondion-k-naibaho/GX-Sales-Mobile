@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GX Sales</string>
+    <string name="tvDummy_Title">Dummy Title</string>
+    <string name="tvCredit">GlobalXtreme © 2023 - V1.0</string>
+    <string name="tvBtn_SignIn">Sign In</string>
+    <string name="tvTitle_Email">Email</string>
+    <string name="tvTitle_Password">Password</string>
+    <string name="tvDummy_PopupDescription">Lorem ipsum dolor sit amet et dolore magna aliqua.</string>
+    <string name="tvPopup_SuccessLogin">Lorem ipsum dolor sit amet et dolore magna aliqua.</string>
+    <string name="tvPopupTitle_Success">Success</string>
+    <string name="tvPopupDesc_ProcessSuccess">Your process is success</string>
+    <string name="tvPopupDesc_LoginSuccess">Congratulations! You\'ve successfully logged in.</string>
+</resources>
