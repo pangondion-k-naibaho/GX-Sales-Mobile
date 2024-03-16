@@ -29,4 +29,9 @@
         <item name="android:statusBarColor" tools:targetApi="P">?attr/colorPrimaryVariant</item>
     </style>
 
+    <style name="BottomNavigationTextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@drawable/bottom_nav_color_selector</item>
+    </style>
+
 </resources>

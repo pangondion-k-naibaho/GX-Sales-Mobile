@@ -10,15 +10,15 @@ class Constants {
 
     interface PREFERENCES{
         companion object{
-            const val LOGIN_PREFERENCES = "LOGIN_PREFERENCES"
+            const val USER_PREFERENCES = "USER_PREFERENCES"
             const val TOKEN_KEY = "TOKEN_KEY"
         }
     }
 
-    interface LOGIN_STATUS{
+    interface STATUS{
         companion object{
-            const val LOGIN_SUCCESS = "success"
-            const val LOGIN_ERROR = "error"
+            const val STATUS_SUCCESS = "success"
+            const val STATUS_ERROR = "error"
         }
     }
 

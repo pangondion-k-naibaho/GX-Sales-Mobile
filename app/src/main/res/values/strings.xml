@@ -10,4 +10,23 @@
     <string name="tvPopupTitle_Success">Success</string>
     <string name="tvPopupDesc_ProcessSuccess">Your process is success</string>
     <string name="tvPopupDesc_LoginSuccess">Congratulations! You\'ve successfully logged in.</string>
+    <string name="tvPopupTitle_Logout">Log Out</string>
+    <string name="tvPopupDesc_Logout">Are you sure you want to log out?</string>
+    <string name="tvPopupDesc_LogoutSuccess">Congratulations! You\'ve successfully logged out.</string>
+    <string name="tvPopupTitle_Unauthorized">Session Expired</string>
+    <string name="tvPopupDesc_Unauthorized">Please log in again to continue.</string>
+    <string name="tvMenu_home">Home</string>
+    <string name="tvMenu_leads">Leads</string>
+    <string name="tvMenu_shop">Shop</string>
+    <string name="tvMenu_account">Account</string>
+    <string name="tvDummy_Name">Arbi Mauday</string>
+    <string name="tvDummy_Email">arbi@example.com</string>
+    <string name="tvDummy_BranchTitle">Branch</string>
+    <string name="tvDummy_BranchDesc">GlobalXtreme Bali</string>
+    <string name="btnTxt_Logout">Log Out</string>
+    <string name="btnTxt_Cancel">Cancel</string>
+    <string name="tvDummy_DivisionTitle">Division</string>
+    <string name="tvDummy_DivisionDesc">Sales</string>
+    <string name="tvDummy_PositionTitle">Job Position</string>
+    <string name="tvDummy_PositionDesc">Senior Sales</string>
 </resources>

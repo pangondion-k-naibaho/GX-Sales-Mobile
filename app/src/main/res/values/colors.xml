@@ -37,5 +37,11 @@
     <color name="black_river_falls">#344054</color>
     <color name="leadbelcher">#CACACA</color>
     <color name="astrochopus_grey">#AEB3B7</color>
+    <color name="pico_metal">#C2C5C7</color>
+    <color name="dustblu">#959A9E</color>
+    <color name="black_50">#80000000</color>
+    <color name="brilliant_liquorice">#545454</color>
+    <color name="mostly_metal">#575C5F</color>
+    <color name="erigal_white">#F2F2F3</color>
 
 </resources>

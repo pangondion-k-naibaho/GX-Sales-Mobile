@@ -8,8 +8,8 @@ import android.util.Log
 import androidx.activity.ComponentActivity
 import com.gxsales.client.R
 import com.gxsales.client.databinding.ActivityLoadscreenBinding
-import com.gxsales.client.model.Constants.PREFERENCES.Companion.LOGIN_PREFERENCES
 import com.gxsales.client.model.Constants.PREFERENCES.Companion.TOKEN_KEY
+import com.gxsales.client.model.Constants.PREFERENCES.Companion.USER_PREFERENCES
 import com.gxsales.client.view.activity.Dashboard.DashboardActivity
 import com.gxsales.client.view.activity.Login.LoginActivity
 
@@ -28,7 +28,7 @@ class LoadScreenActivity : ComponentActivity() {
     private fun setUpView(){
         val handler = Handler(Looper.getMainLooper())
         handler.postDelayed({
-            val sharedPreferences = this@LoadScreenActivity.getSharedPreferences(LOGIN_PREFERENCES, Context.MODE_PRIVATE)
+            val sharedPreferences = this@LoadScreenActivity.getSharedPreferences(USER_PREFERENCES, Context.MODE_PRIVATE)
 
             val retrievedToken =sharedPreferences.getString(TOKEN_KEY, null)
             Log.d(TAG, "retrievedToken : $retrievedToken")

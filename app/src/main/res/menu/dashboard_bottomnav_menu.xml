@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:title="@string/tvMenu_home"
+        android:icon="@drawable/ic_home_pico"/>
+
+    <item
+        android:id="@+id/menu_leads"
+        android:title="@string/tvMenu_leads"
+        android:icon="@drawable/ic_user_tag_pico"/>
+
+    <item
+        android:id="@+id/menu_shop"
+        android:title="@string/tvMenu_shop"
+        android:icon="@drawable/ic_shopping_bag_pico"/>
+
+    <item
+        android:id="@+id/menu_account"
+        android:title="@string/tvMenu_account"
+        android:icon="@drawable/ic_location_tick_pico"/>
+
+</menu>

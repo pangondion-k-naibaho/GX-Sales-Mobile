@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_bottomsheet"
+    android:paddingHorizontal="24dp"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="80dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <View
+        android:id="@+id/vBottomSheet"
+        android:layout_width="50dp"
+        android:layout_height="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rectangle_dustblu"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vBottomSheet"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/dummy_photo"/>
+
+    <TextView
+        android:id="@+id/tvProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivProfile"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/inter_medium"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:text="@string/tvDummy_Name"/>
+
+    <TextView
+        android:id="@+id/tvProfileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvProfileName"
+        android:layout_marginTop="2dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/inter_light"
+        android:textSize="11sp"
+        android:textColor="@color/brilliant_liquorice"
+        android:text="@string/tvDummy_Email"/>
+
+    <TextView
+        android:id="@+id/tvDetailTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileEmail"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/inter_light"
+        android:textSize="12sp"
+        android:textColor="@color/mostly_metal"
+        android:text="@string/tvDummy_BranchTitle"/>
+
+    <TextView
+        android:id="@+id/tvDetailDesc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailTitle1"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/inter_semibold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="@string/tvDummy_BranchDesc"/>
+
+    <TextView
+        android:id="@+id/tvDetailTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailDesc1"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter_light"
+        android:textSize="12sp"
+        android:textColor="@color/mostly_metal"
+        android:text="@string/tvDummy_DivisionTitle"/>
+
+    <TextView
+        android:id="@+id/tvDetailDesc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailTitle2"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/inter_semibold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="@string/tvDummy_DivisionDesc"/>
+
+    <TextView
+        android:id="@+id/tvDetailTitle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailDesc2"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter_light"
+        android:textSize="12sp"
+        android:textColor="@color/mostly_metal"
+        android:text="@string/tvDummy_PositionTitle"/>
+
+    <TextView
+        android:id="@+id/tvDetailDesc3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailTitle3"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/inter_semibold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="@string/tvDummy_PositionDesc"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="138dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailDesc3"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/bg_rectangle_nectarous_white"
+        android:text="@string/btnTxt_Logout"
+        android:textColor="@color/nectarous_nectarine"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:fontFamily="@font/inter_medium"
+        android:drawableEnd="@drawable/ic_logout"/>
+
+    <TextView
+        android:id="@+id/tvCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAlignment="center"
+        android:fontFamily="@font/inter_light"
+        android:textSize="12sp"
+        android:textColor="@color/leadbelcher"
+        android:text="@string/tvCredit"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
