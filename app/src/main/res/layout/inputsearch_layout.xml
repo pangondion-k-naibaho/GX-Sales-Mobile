@@ -13,7 +13,7 @@
         android:paddingHorizontal="10dp"
         android:focusable="true"
         android:textColor="@color/black"
-        android:textColorHint="@color/grey"
+        android:textColorHint="@color/carbon_footprint"
         android:focusableInTouchMode="true"
         android:background="@drawable/bg_rectangle_zzb_cascading"
         tools:ignore="MissingConstraints"/>

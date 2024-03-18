@@ -27,7 +27,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:paddingVertical="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:background="@drawable/bg_rectangle_erigal_white">
+            android:background="@drawable/bg_rectangle_actionbar">
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bnvDashboard"

@@ -29,4 +29,24 @@
     <string name="tvDummy_DivisionDesc">Sales</string>
     <string name="tvDummy_PositionTitle">Job Position</string>
     <string name="tvDummy_PositionDesc">Senior Sales</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tvDummy_ToolbarTitle">Add Lead</string>
+    <string name="tvToolbarTitle_Leads">Leads</string>
+    <string name="tvToolbarTitle_Shop">Item Shop</string>
+    <string name="tvDummy_DateRange">01 Jan 2024 – 31 Jan 2024</string>
+    <string name="tvDummy_ProductName">A810R AC1200 Router</string>
+    <string name="tvDummy_ProductPrice">Rp 56.000.000.000 / pcs</string>
+    <string name="tvTitle_ProductStock">Stock :</string>
+    <string name="tvDummy_ProductStock">3 Pcs</string>
+    <string name="tvTitle_TypeProduct">Type :</string>
+    <string name="tvDummy_ProductType">Onu |</string>
+    <string name="tvTitle_TaxProduct">w/Tax :</string>
+    <string name="tvDummy_ProductTax">Rp 56.600 (11%)</string>
+    <string name="tvFormat_ProductPrice">Rp %s / pcs</string>
+    <string name="tvFormat_ProductStock">%d Pcs</string>
+    <string name="tvFormat_ProductTax">Rp %s (11%%)</string>
+    <string name="tvHint_SearchShop">Search…</string>
+    <string name="tvDummy_SummaryCount">15</string>
+    <string name="tvDummy_SummaryName">Total All Leads</string>
 </resources>

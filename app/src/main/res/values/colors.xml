@@ -43,5 +43,14 @@
     <color name="brilliant_liquorice">#545454</color>
     <color name="mostly_metal">#575C5F</color>
     <color name="erigal_white">#F2F2F3</color>
+    <color name="placebo">#E7E7E7</color>
+    <color name="fragrant_wand">#ACADC1</color>
+    <color name="spinel_stone_black">#26273B</color>
+    <color name="carbon_fiber">#2D2D2D</color>
+    <color name="sonic_silver">#757575</color>
+    <color name="pig_iron">#484848</color>
+    <color name="carbon_footprint">#7C8089</color>
+    <color name="paternoster">#C7C7C7</color>
+    <color name="stormy_mauve">#6F708B</color>
 
 </resources>

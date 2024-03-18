@@ -42,6 +42,7 @@ class DashboardViewModel: ViewModel() {
                 _isLoading.value = false
                 if(response.isSuccessful){
                     _isFail.value = false
+                    _isUnauthorized.value = false
                     _userProfileResponse.value = response.body()
                     Log.d(TAG, "Success")
                 }
