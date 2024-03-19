@@ -1,7 +1,8 @@
-package com.gxsales.client.model.dataclass.response
+package com.gxsales.client.model.dataclass.response.Profile
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import com.gxsales.client.model.dataclass.response.Profile.DataProfile
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize

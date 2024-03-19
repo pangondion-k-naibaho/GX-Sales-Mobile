@@ -13,7 +13,7 @@ import com.gxsales.client.databinding.ActivityLoginBinding
 import com.gxsales.client.model.Constants.PREFERENCES.Companion.TOKEN_KEY
 import com.gxsales.client.model.Constants.PREFERENCES.Companion.USER_PREFERENCES
 import com.gxsales.client.model.Constants.STATUS.Companion.STATUS_SUCCESS
-import com.gxsales.client.model.dataclass.response.LoginResponse
+import com.gxsales.client.model.dataclass.response.Authentication.LoginResponse
 import com.gxsales.client.view.activity.Dashboard.DashboardActivity
 import com.gxsales.client.view.advanced_ui.InputTextView
 import com.gxsales.client.view.advanced_ui.PopUpNotificationListener

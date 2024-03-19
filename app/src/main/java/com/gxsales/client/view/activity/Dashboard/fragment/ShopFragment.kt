@@ -9,11 +9,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.gxsales.client.R
-import com.gxsales.client.databinding.FragmentLeadsBinding
 import com.gxsales.client.databinding.FragmentShopBinding
 import com.gxsales.client.model.Constants.DUMMY_DATA.Companion.getListItemShop
-import com.gxsales.client.model.dataclass.response.ItemShopResponse
-import com.gxsales.client.model.dataclass.response.ProfileResponse
 import com.gxsales.client.view.activity.Dashboard.FragmentsDashboardCommunicator
 import com.gxsales.client.view.adapter.ItemShopAdapter
 import com.gxsales.client.view.advanced_ui.InputSearchView

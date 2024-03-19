@@ -4,8 +4,9 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.gxsales.client.model.dataclass.response.LogoutResponse
-import com.gxsales.client.model.dataclass.response.ProfileResponse
+import com.gxsales.client.model.dataclass.response.Authentication.LogoutResponse
+import com.gxsales.client.model.dataclass.response.Lead.CollectionLeadResponse
+import com.gxsales.client.model.dataclass.response.Profile.ProfileResponse
 import com.gxsales.client.model.remote.ApiConfig
 import retrofit2.Call
 import retrofit2.Response
@@ -27,6 +28,9 @@ class DashboardViewModel: ViewModel() {
 
     private var _userLogoutResponse = MutableLiveData<LogoutResponse>()
     val userLogoutResponse: LiveData<LogoutResponse> = _userLogoutResponse
+
+    private var _collectionLeadResponse = MutableLiveData<CollectionLeadResponse>()
+    val collectionLeadResponse: LiveData<CollectionLeadResponse> = _collectionLeadResponse
 
     fun getUserProfile(token: String){
         _isLoading.value = true
@@ -87,12 +91,56 @@ class DashboardViewModel: ViewModel() {
                     _userLogoutResponse.value = response.body()
                     Log.d(TAG, "Success")
                 }else{
-                    _isFail.value = true
-                    Log.e(TAG, "onFailure: ${response.message()}")
+                    if (response.code() == 401) {
+                        _isUnauthorized.value = true
+                        _isFail.value = false
+                        Log.e(TAG, "Unauthorized access: ${response.message()}")
+                    } else {
+                        _isUnauthorized.value = false
+                        _isFail.value = true
+                        Log.e(TAG, "onFailure: ${response.message()}")
+                    }
                 }
             }
 
             override fun onFailure(call: Call<LogoutResponse>, t: Throwable) {
+                _isLoading.value = false
+                _isFail.value = true
+                Log.e(TAG, "onFailure: ${t.message.toString()}")
+            }
+
+        })
+    }
+
+    fun getLeadsCollection(token: String){
+        _isLoading.value = true
+        val bearerToken = "Bearer $token"
+        val client = ApiConfig.getApiService().getCollectionLead(bearerToken)
+        client.enqueue(object:retrofit2.Callback<CollectionLeadResponse>{
+            override fun onResponse(
+                call: Call<CollectionLeadResponse>,
+                response: Response<CollectionLeadResponse>
+            ) {
+                _isLoading.value = false
+                if(response.isSuccessful){
+                    _isFail.value = false
+                    _isUnauthorized.value = false
+                    _collectionLeadResponse.value = response.body()
+                    Log.d(TAG, "Success")
+                }else{
+                    if(response.code() == 401){
+                        _isUnauthorized.value = true
+                        _isFail.value = false
+                        Log.e(TAG, "Unauthorized access: ${response.message()}")
+                    }else{
+                        _isUnauthorized.value = false
+                        _isFail.value = true
+                        Log.e(TAG, "onFailure: ${response.message()}")
+                    }
+                }
+            }
+
+            override fun onFailure(call: Call<CollectionLeadResponse>, t: Throwable) {
                 _isLoading.value = false
                 _isFail.value = true
                 Log.e(TAG, "onFailure: ${t.message.toString()}")

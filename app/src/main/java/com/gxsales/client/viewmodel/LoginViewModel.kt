@@ -4,7 +4,7 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.gxsales.client.model.dataclass.response.LoginResponse
+import com.gxsales.client.model.dataclass.response.Authentication.LoginResponse
 import com.gxsales.client.model.dataclass.request.LoginRequest
 import com.gxsales.client.model.remote.ApiConfig
 import retrofit2.Call

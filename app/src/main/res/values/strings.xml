@@ -49,4 +49,12 @@
     <string name="tvHint_SearchShop">Search…</string>
     <string name="tvDummy_SummaryCount">15</string>
     <string name="tvDummy_SummaryName">Total All Leads</string>
+    <string name="btnTxt_Filter">Filter</string>
+    <string name="tvDummy_LeadName">I Ketut Yuli Adi Saputra</string>
+    <string name="tvDummy_LeadNumber">#LD0124101715</string>
+    <string name="tvDummy_LeadAddress">Jl. Tukad Balian Gg. Nuri III No.9, Renon, Denpasar Selatan, Kota Denpasar, Bali 80227, Indonesia</string>
+    <string name="tvDummy_LeadStatus">Scheduled</string>
+    <string name="tvDummy_LeadProbability">Pending</string>
+    <string name="tvDummy_LeadCreatedAt">02 January 2024</string>
+    <string name="tvDummy_LeadBranchOffice">GlobalXtreme Bali</string>
 </resources>

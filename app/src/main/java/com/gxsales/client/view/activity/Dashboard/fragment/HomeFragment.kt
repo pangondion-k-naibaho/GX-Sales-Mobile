@@ -6,14 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.GridLayoutManager
-import com.bumptech.glide.Glide
-import com.gxsales.client.R
 import com.gxsales.client.databinding.FragmentHomeBinding
 import com.gxsales.client.model.Constants.DUMMY_DATA.Companion.getListItemSummary
-import com.gxsales.client.model.dataclass.response.ProfileResponse
+import com.gxsales.client.model.dataclass.response.Profile.ProfileResponse
 import com.gxsales.client.view.activity.Dashboard.FragmentsDashboardCommunicator
 import com.gxsales.client.view.adapter.ItemSummaryAdapter
 import com.gxsales.client.viewmodel.DashboardViewModel
@@ -67,7 +64,7 @@ class HomeFragment : Fragment() {
         })
 
         dashboardViewModel.isUnauthorized.observe(this@HomeFragment.requireActivity(), {
-            fdCommunicator.setUnauthorizeWarning()
+            if(it == true) fdCommunicator.setUnauthorizeWarning()
         })
 
         dashboardViewModel.userProfileResponse.observe(this@HomeFragment.requireActivity(), { profileResponse ->

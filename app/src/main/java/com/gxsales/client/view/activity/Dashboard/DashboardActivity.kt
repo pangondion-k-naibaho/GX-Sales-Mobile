@@ -22,7 +22,7 @@ import com.gxsales.client.model.Constants.PREFERENCES.Companion.TOKEN_KEY
 import com.gxsales.client.model.Constants.PREFERENCES.Companion.USER_PREFERENCES
 import com.gxsales.client.model.Constants.STATUS.Companion.STATUS_SUCCESS
 import com.gxsales.client.model.Extensions.Companion.dpToPx
-import com.gxsales.client.model.dataclass.response.ProfileResponse
+import com.gxsales.client.model.dataclass.response.Profile.ProfileResponse
 import com.gxsales.client.view.activity.Dashboard.fragment.HomeFragment
 import com.gxsales.client.view.activity.Dashboard.fragment.LeadsFragment
 import com.gxsales.client.view.activity.Dashboard.fragment.ShopFragment
@@ -184,25 +184,25 @@ class DashboardActivity : AppCompatActivity(), FragmentsDashboardCommunicator {
 
     private fun setUpUnauthorized(){
         Log.d(TAG, "Unauthorized")
-//        setForPopUpDisplaying(true)
-//        this@DashboardActivity.showPopupNotification(
-//            getString(R.string.tvPopupTitle_Unauthorized),
-//            getString(R.string.tvPopupDesc_Unauthorized),
-//            R.drawable.ic_checklist_green,
-//            object: PopUpNotificationListener{
-//                override fun onClickListener() {
-//                    this@DashboardActivity.closeOptionsMenu()
-//                    val editor = sharedPreferences.edit()
-//                    editor.remove(TOKEN_KEY)
-//                    editor.apply()
-//                    if(editor.commit()){
-//                        startActivity(LoginActivity.newIntent(this@DashboardActivity))
-//                        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-//                        finish()
-//                    }
-//                }
-//            }
-//        )
+        setForPopUpDisplaying(true)
+        this@DashboardActivity.showPopupNotification(
+            getString(R.string.tvPopupTitle_Unauthorized),
+            getString(R.string.tvPopupDesc_Unauthorized),
+            R.drawable.ic_checklist_green,
+            object: PopUpNotificationListener{
+                override fun onClickListener() {
+                    this@DashboardActivity.closeOptionsMenu()
+                    val editor = sharedPreferences.edit()
+                    editor.remove(TOKEN_KEY)
+                    editor.apply()
+                    if(editor.commit()){
+                        startActivity(LoginActivity.newIntent(this@DashboardActivity))
+                        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+                        finish()
+                    }
+                }
+            }
+        )
     }
 
     fun setForPopUpDisplaying(isDisplaying: Boolean){

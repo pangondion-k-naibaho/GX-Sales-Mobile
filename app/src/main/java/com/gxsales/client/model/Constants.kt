@@ -26,6 +26,22 @@ class Constants {
         }
     }
 
+    interface LEAD_STATUS{
+        companion object{
+            const val SCHEDULED = "Scheduled"
+            const val CONSIDERATION = "Consideration"
+            const val JUNK = "Junk"
+        }
+    }
+
+    interface LEAD_PROBABILITY{
+        companion object{
+            const val PENDING = "Pending"
+            const val CONVERTED = "Converted"
+            const val CANCEL = "Cancel"
+        }
+    }
+
     interface DUMMY_DATA{
         companion object{
             fun getListItemShop(): List<ItemShopResponse> = listOf(

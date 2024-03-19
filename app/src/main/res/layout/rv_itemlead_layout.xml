@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="18dp">
+
+    <TextView
+        android:id="@+id/tvLeadName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/inter_medium"
+        android:textSize="16sp"
+        android:textColor="@color/carbon_fiber"
+        android:text="@string/tvDummy_LeadName"/>
+
+    <TextView
+        android:id="@+id/tvLeadNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tvLeadName"
+        app:layout_constraintTop_toBottomOf="@+id/tvLeadName"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/inter_medium"
+        android:textSize="11sp"
+        android:textColor="@color/himawari_yellow"
+        android:text="@string/tvDummy_LeadNumber"/>
+
+    <TextView
+        android:id="@+id/tvLeadAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tvLeadNumber"
+        app:layout_constraintTop_toBottomOf="@+id/tvLeadNumber"
+        android:layout_marginTop="6dp"
+        android:maxWidth="300dp"
+        android:maxLines="2"
+        android:fontFamily="@font/inter_regular"
+        android:textSize="11sp"
+        android:textColor="@color/mostly_metal"
+        android:text="@string/tvDummy_LeadAddress"/>
+
+    <TextView
+        android:id="@+id/tvLeadStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tvLeadAddress"
+        app:layout_constraintTop_toBottomOf="@id/tvLeadAddress"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="2dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/inter_light"
+        android:textSize="8sp"
+        android:background="@drawable/bg_rectangle_bubble_bobble"
+        android:text="@string/tvDummy_LeadStatus"/>
+
+    <TextView
+        android:id="@+id/tvleadPossibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tvLeadStatus"
+        app:layout_constraintTop_toTopOf="@id/tvLeadStatus"
+        app:layout_constraintBottom_toBottomOf="@id/tvLeadStatus"
+        android:layout_marginStart="8dp"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="2dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/inter_light"
+        android:textSize="8sp"
+        android:background="@drawable/bg_rectangle_himawari_yellow"
+        android:text="@string/tvDummy_LeadProbability"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0.6dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@+id/tvleadPossibility"
+        app:layout_constraintTop_toTopOf="@+id/tvleadPossibility"
+        app:layout_constraintBottom_toBottomOf="@id/tvleadPossibility"
+        android:background="@color/mostly_metal"
+        android:layout_marginStart="8dp"
+        android:layout_marginVertical="1dp"/>
+
+    <TextView
+        android:id="@+id/tvLeadCreatedAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/view1"
+        app:layout_constraintBottom_toBottomOf="@id/view1"
+        app:layout_constraintTop_toTopOf="@id/view1"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/inter_regular"
+        android:textSize="11sp"
+        android:textColor="@color/mostly_metal"
+        android:text="@string/tvDummy_LeadCreatedAt"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0.6dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@+id/tvLeadCreatedAt"
+        app:layout_constraintTop_toTopOf="@+id/view1"
+        app:layout_constraintBottom_toBottomOf="@id/view1"
+        android:background="@color/mostly_metal"
+        android:layout_marginStart="8dp"
+        android:layout_marginVertical="1dp"/>
+
+    <TextView
+        android:id="@+id/tvLeadBranchOffice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/view2"
+        app:layout_constraintBottom_toBottomOf="@id/view2"
+        app:layout_constraintTop_toTopOf="@id/view2"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/inter_regular"
+        android:textSize="11sp"
+        android:textColor="@color/mostly_metal"
+        android:text="@string/tvDummy_LeadBranchOffice"/>
+
+    <View
+        android:id="@+id/viewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLeadCreatedAt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_dotted_line_pico"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

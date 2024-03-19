@@ -1,9 +1,10 @@
 package com.gxsales.client.model.remote
 
-import com.gxsales.client.model.dataclass.response.LoginResponse
+import com.gxsales.client.model.dataclass.response.Authentication.LoginResponse
 import com.gxsales.client.model.dataclass.request.LoginRequest
-import com.gxsales.client.model.dataclass.response.LogoutResponse
-import com.gxsales.client.model.dataclass.response.ProfileResponse
+import com.gxsales.client.model.dataclass.response.Authentication.LogoutResponse
+import com.gxsales.client.model.dataclass.response.Lead.CollectionLeadResponse
+import com.gxsales.client.model.dataclass.response.Profile.ProfileResponse
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -23,4 +24,9 @@ interface ApiService {
     fun getUserProfile(
         @Header("Authorization") userToken: String
     ): Call<ProfileResponse>
+
+    @GET("leads")
+    fun getCollectionLead(
+        @Header("Authorization") userToken: String
+    ): Call<CollectionLeadResponse>
 }
