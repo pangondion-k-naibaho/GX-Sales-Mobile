@@ -27,20 +27,20 @@
         android:textColor="@color/black"
         android:text="@string/tvDummy_ToolbarTitle"/>
 
-    <ImageButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnLeft"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="8.33dp"
+        android:layout_height="14.05dp"
         android:background="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tvTitle"
         app:layout_constraintBottom_toBottomOf="@+id/tvTitle"
         android:layout_marginStart="13dp"/>
 
-    <ImageButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnRight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
         android:background="@drawable/ic_save_add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tvTitle"

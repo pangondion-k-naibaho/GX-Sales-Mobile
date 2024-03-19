@@ -33,6 +33,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tvDummy_ToolbarTitle">Add Lead</string>
     <string name="tvToolbarTitle_Leads">Leads</string>
+    <string name="tvToolbarTitle_AddLeads">Add Leads</string>
     <string name="tvToolbarTitle_Shop">Item Shop</string>
     <string name="tvDummy_DateRange">01 Jan 2024 – 31 Jan 2024</string>
     <string name="tvDummy_ProductName">A810R AC1200 Router</string>
@@ -47,6 +48,7 @@
     <string name="tvFormat_ProductStock">%d Pcs</string>
     <string name="tvFormat_ProductTax">Rp %s (11%%)</string>
     <string name="tvHint_SearchShop">Search…</string>
+    <string name="tvHint_SearchLead">e.g John Doe</string>
     <string name="tvDummy_SummaryCount">15</string>
     <string name="tvDummy_SummaryName">Total All Leads</string>
     <string name="btnTxt_Filter">Filter</string>
@@ -57,4 +59,6 @@
     <string name="tvDummy_LeadProbability">Pending</string>
     <string name="tvDummy_LeadCreatedAt">02 January 2024</string>
     <string name="tvDummy_LeadBranchOffice">GlobalXtreme Bali</string>
+    <string name="btnTxt_Previous">Previous</string>
+    <string name="btnTxt_Submit">Submit</string>
 </resources>

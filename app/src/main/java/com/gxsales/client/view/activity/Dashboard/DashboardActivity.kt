@@ -23,6 +23,7 @@ import com.gxsales.client.model.Constants.PREFERENCES.Companion.USER_PREFERENCES
 import com.gxsales.client.model.Constants.STATUS.Companion.STATUS_SUCCESS
 import com.gxsales.client.model.Extensions.Companion.dpToPx
 import com.gxsales.client.model.dataclass.response.Profile.ProfileResponse
+import com.gxsales.client.view.activity.AddLead.AddLeadActivity
 import com.gxsales.client.view.activity.Dashboard.fragment.HomeFragment
 import com.gxsales.client.view.activity.Dashboard.fragment.LeadsFragment
 import com.gxsales.client.view.activity.Dashboard.fragment.ShopFragment
@@ -163,6 +164,13 @@ class DashboardActivity : AppCompatActivity(), FragmentsDashboardCommunicator {
                         return true
                     }
                 })
+            }
+
+            btnAction.setOnClickListener {
+                startActivity(
+                    AddLeadActivity.newIntent(this@DashboardActivity)
+                )
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
             }
         }
 

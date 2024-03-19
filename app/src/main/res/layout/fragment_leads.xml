@@ -32,6 +32,7 @@
         android:fontFamily="@font/inter_regular"
         android:textColor="@color/ruined_smores"
         android:textSize="12sp"
+        android:paddingHorizontal="2dp"
         android:layout_marginStart="4dp"/>
 
     <androidx.recyclerview.widget.RecyclerView

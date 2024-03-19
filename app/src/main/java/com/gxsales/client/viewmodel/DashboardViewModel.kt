@@ -21,7 +21,7 @@ class DashboardViewModel: ViewModel() {
     val isFail: LiveData<Boolean> = _isFail
 
     private var _isUnauthorized = MutableLiveData<Boolean>()
-    val isUnauthorized: LiveData<Boolean> = _isFail
+    val isUnauthorized: LiveData<Boolean> = _isUnauthorized
 
     private var _userProfileResponse = MutableLiveData<ProfileResponse>()
     val userProfileResponse: LiveData<ProfileResponse> = _userProfileResponse

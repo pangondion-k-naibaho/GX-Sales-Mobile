@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Main Content View -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.activity.AddLead.AddLeadActivity">
+
+        <com.gxsales.client.view.advanced_ui.CustomActionbar
+            android:id="@+id/cabAddLead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cabAddLead"
+            android:background="@color/pico_metal"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vpAddLead"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginVertical="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1"
+            app:layout_constraintBottom_toTopOf="@+id/view2"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/clButtonAction"
+            android:background="@color/pico_metal"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clButtonAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:paddingVertical="16dp"
+            android:paddingHorizontal="24dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLeft"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="8dp"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="16dp"
+                android:background="@drawable/bg_rectangle_himawari_white"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_medium"
+                android:textSize="14sp"
+                android:text="@string/btnTxt_Previous"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRight"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="8dp"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="16dp"
+                android:background="@drawable/bg_rectangle_himawari"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_medium"
+                android:textSize="14sp"
+                android:text="@string/btnTxt_Submit"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Loading Layout -->
+    <RelativeLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50000000"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <!-- Progress indicator or loading animation goes here -->
+        <ProgressBar
+            android:id="@+id/pbLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/himawari_yellow"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
